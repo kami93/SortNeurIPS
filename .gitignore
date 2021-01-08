@@ -1,4 +1,5 @@
 .DS_Store
 temp/*
+!temp/.gitkeep
 NeurIPS*.csv
 __pycache__
