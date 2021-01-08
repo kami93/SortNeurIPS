@@ -4,7 +4,7 @@ import pandas as pd
 from time import sleep
 import warnings
 import pickle as pkl
-from Errors import *
+from errors import *
 from tqdm import tqdm
 
 # Solve conflict between raw_input and input on Python 2 and Python 3
