@@ -26,7 +26,7 @@ The program accepts the following arguments.
 A basic usage is as follows. It will sort NeurIPS 2020 papers and output NeurIPS2020.csv.
 
 ```
-python --year 2020
+python sort.py --year 2020
 ```
 
 A Chrome (controlled by Selenium driver) window will open, and read the list of NeurIPS 2020 papers from the official proceedings page.
@@ -53,13 +53,13 @@ When finished, the program will output NeurIPS2020.csv at the current directory.
 Optinally, you can add "--month" argument to calculate the number of citations per month. It is useful when the event happend within the past few months. NeurIPS is usally held on December.
 
 ```
-python --year 2020 --month 12
+python sort.py --year 2020 --month 12
 ```
 
 You can also add "--csv" argument to set alternative location to save the output csv file.
 
 ```
-python --year 2020 --month 12 --csv PATH_TO_THE_DIRECTORY
+python sort.py --year 2020 --month 12 --csv PATH_TO_THE_DIRECTORY
 ```
 
 The program can restore from backup ("./temp/backup.pkl") saved while working. If the program is terminated for any reason just answer "Y" to the question upon the program's startup.
