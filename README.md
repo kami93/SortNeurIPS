@@ -18,7 +18,7 @@ The program accepts the following arguments.
 ```
 "--year" (required): A NeurIPS year to sort.
 
-"--month" (optional): A NeurIPS month (Mostly "12" for recent events.). Used for calculating average citations per month.
+"--month" (optional): A NeurIPS month. Used for calculating average citations per month.
 
 "--csv (optional)": The location to save output *.csv file.
 ```
