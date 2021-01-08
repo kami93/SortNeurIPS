@@ -160,10 +160,6 @@ def main():
     if month is None:
         print("Please provide month for \"cit/month\" information.")
 
-    # Class instances
-    now = datetime.datetime.now()
-    driver = setup_driver()
-
     # Accumul.
     start_idx = 0
     citations = []
@@ -175,6 +171,10 @@ def main():
             print("Restoring from backup...")
             with open('./temp/backup.pkl', 'rb') as f:
                 [start_idx, citations, etc] = pkl.load(f)
+
+    # Class instances
+    now = datetime.datetime.now()
+    driver = setup_driver()
 
     print("Loading NeruIPS {} results".format(year))
     
